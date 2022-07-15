@@ -1,8 +1,7 @@
 /*Fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("./fonts.css");
 
-/**/
-/*nullstyle*/
+/**/ /*nullstyle*/
 * {
   padding: 0;
   margin: 0;
@@ -93,74 +92,65 @@ h6 {
 
 /*--------------------*/
 
-.subtitle {
-  font-family: Roboto;
+/* ........COMMON STYLES.................... */
+._container {
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* .................................................. */
+
+/* OFFER */
+
+/* COMMON STYLES */
+.features__subtitle {
+  font-family: "Roboto";
   font-size: 24px;
   line-height: 28px;
   color: #383838;
 }
-.wrapper {
+.features__item {
+  width: 296px;
+  align-items: center;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
 }
-.title {
+.item__img {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 120px 0 0px 0;
-  font-family: Roboto;
+  height: 100px;
+  margin: 0 0 52px 0;
+}
+/* .................................. */
+
+.offer__container {
+  padding: 106px 0 122px 0;
+}
+.offer__title {
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   color: #383838;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.title:after {
-  text-align: center;
+.offer__title:after {
   content: "";
-  margin: 20px 0 0 0;
   display: block;
   width: 100px;
   height: 4px;
   background: #f5bd41;
+  margin: 20px 0 0 0;
 }
-.features {
+.offer__features {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0 122px 0;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 80px 0 0 0;
 }
-.features__support {
-  text-align: center;
-  margin: 0 0 0 104px;
-}
-img.support__img {
-}
-.support__title {
-  margin: 48px 0 0 0;
-}
-.features__communication {
-  text-align: center;
-}
-img.communication__img {
-}
-.communication__title {
-  margin: 48px 0 0 0;
-}
-.features__book {
-  text-align: center;
-}
-img.book__img {
-}
-.book__title {
-  margin: 48px 0 0 0;
-}
-.features__reviews {
-  text-align: center;
-  margin: 0 104px 0 0;
-}
-img.reviews__img {
-}
-.reviews__title {
-  margin: 48px 0 0 0;
-}
+/* .............................. */
