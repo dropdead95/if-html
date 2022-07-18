@@ -98,6 +98,14 @@ h6 {
   margin: 0 auto;
   padding: 0 20px;
 }
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 1 auto;
+}
 /* .................................................. */
 
 /* OFFER */
@@ -154,3 +162,56 @@ h6 {
   margin: 80px 0 0 0;
 }
 /* .............................. */
+/* FOOTER */
+
+/* COMMON STYLES */
+
+.link__title {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #fff;
+}
+.link__title:hover {
+  text-decoration: underline;
+}
+.item__link {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #fff;
+}
+.item__link:hover {
+  text-decoration: underline;
+}
+.list__item {
+  margin: 24px 0 0 0;
+}
+
+/* ......................... */
+
+.footer {
+  background: #10367c;
+}
+.footer__container {
+  display: flex;
+  padding: 120px 0;
+  flex-wrap: wrap;
+}
+
+.footer__about {
+  margin: 0 223px 0 0;
+}
+
+.footer__property {
+  margin: 0 282px 0 0;
+}
+.footer__copyright {
+  font-family: "Roboto";
+  line-height: 1.14;
+  color: #fff;
+  margin: 64px 0 0 0;
+}
+/* ............................. */
