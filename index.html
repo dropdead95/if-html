@@ -13,13 +13,69 @@
   <body>
     <div class="wrapper">
       <main class="main">
+        <section class="top-section">
+          <div class="top-section__container _container">
+            <div class="top-section__header">
+              <a href="#" class="header__logo"></a>
+
+              <nav class="header__menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Stays</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Attractions</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="#" class="header__night-button"></a>
+              <a href="#" class="header__account-button"></a>
+            </div>
+            <div class="top-section__content">
+              <h1 class="content__title">
+                Discover stays to live, work or just relax
+              </h1>
+              <div class="content__form-subtitle">
+                <p class="subtitle-form-input">
+                  Your destination or hotel name
+                </p>
+                <p class="subtitle-form-input">Check-in — Check-out</p>
+              </div>
+              <form action="#" class="content__form">
+                <input
+                  name="destination"
+                  type="text"
+                  class="content__form_city"
+                  value="New York"
+                />
+                <input
+                  name="date"
+                  type="date"
+                  class="content__form_date"
+                /><input
+                  name="guests"
+                  type="text"
+                  class="content__form_guests"
+                  value="2 Adults — 0 Children — 1 Room"
+                /><button type="submit" class="content__form_button">
+                  Search
+                </button>
+              </form>
+              <div class="content__download">
+                <a href="#" class="content__download_google"></a>
+                <a href="#" class="content__download_appstore"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section class="offer">
           <div class="offer__container _container">
             <h1 class="offer__title">What do we offer</h1>
             <ul class="offer__features">
               <li class="features__support features__item">
                 <div class="support__img item__img">
-                  <img src="/images/icons/support.svg" alt="" />
+                  <img src="/images/offer-section/icons/support.svg" alt="" />
                 </div>
                 <h2 class="support__subtitle features__subtitle">
                   Support 24/7
@@ -27,7 +83,10 @@
               </li>
               <li class="features__communication features__item">
                 <div class="communication__img item__img">
-                  <img src="/images/icons/communicate.svg" alt="" />
+                  <img
+                    src="/images/offer-section/icons/communicate.svg"
+                    alt=""
+                  />
                 </div>
                 <h2 class="communication__subtitle features__subtitle">
                   Communicate directly
@@ -35,13 +94,13 @@
               </li>
               <li class="features__book features__item">
                 <div class="book__img item__img">
-                  <img src="/images/icons/book.svg" alt="" />
+                  <img src="/images/offer-section/icons/book.svg" alt="" />
                 </div>
                 <h2 class="book__subtitle features__subtitle">Book online</h2>
               </li>
               <li class="features__reviews features__item">
                 <div class="reviews__img item__img">
-                  <img src="/images/icons/reviews.svg" alt="" />
+                  <img src="/images/offer-section/icons/reviews.svg" alt="" />
                 </div>
                 <h2 class="reviews__subtitle features__subtitle">
                   Real guest reviews
