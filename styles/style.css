@@ -213,14 +213,15 @@ body {
   align-self: start;
   padding: 0 0 0 24px;
   margin: 0 0 24px 0;
+  z-index: 10;
 }
-.subtitle-form-input {
+label {
   margin: 0 221px 0 0;
   font-size: 18px;
   line-height: 117%;
   color: #fff;
 }
-.subtitle-form-input:last-child {
+label:last-child {
   margin: 0;
 }
 .content__form {
