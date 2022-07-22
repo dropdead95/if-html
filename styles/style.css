@@ -147,23 +147,31 @@ body {
 
 /* top section header */
 .header__logo {
-  display: inline-block;
-  min-width: 205px;
-  background: url("../images/top-section/icons/icons-sprite.png") no-repeat left;
   margin: 0 684px 0 0;
 }
+.header__logo_icon {
+  fill: #3077c6;
+  width: 205px;
+  height: 40px;
+}
 .header__night-button {
-  display: inline-block;
-  min-width: 30px;
-  background: url("../images/top-section/icons/icons-sprite.png") no-repeat;
-  background-position: -205px;
+  display: flex;
+  align-items: center;
   margin: 0 24px 0 0;
 }
+.header__night-button-icon {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+}
 .header__account-button {
-  min-width: 40px;
-  display: inline-block;
-  background: url("../images/top-section/icons/icons-sprite.png") no-repeat;
-  background-position: -235px;
+  display: flex;
+  align-items: center;
+}
+.header__account-button-icon {
+  fill: #fff;
+  width: 40px;
+  height: 40px;
 }
 .header__menu {
   display: flex;
@@ -292,16 +300,18 @@ label:last-child {
   height: 40px;
   z-index: 10;
 }
-.content__download_google {
+.content__download_google-icon {
   width: 135px;
-  background: url("../images/top-section/icons/icons-sprite.png") no-repeat;
-  background-position: -275px;
+  height: 40px;
 }
 .content__download_appstore {
-  width: 120px;
-  background: url("../images/top-section/icons/icons-sprite.png") no-repeat;
-  background-position: -410px;
+
 }
+.content__download_appstore-icon {
+  width: 120px;
+  height: 40px;
+}
+
 
 /* ........................................... */
 
@@ -316,14 +326,14 @@ label:last-child {
 .features__item {
   width: 296px;
   align-items: center;
-  justify-content: space-between;
   display: flex;
   flex-direction: column;
 }
 .item__img {
-  display: flex;
+  fill: #3077c6;
+  width: 100px;
   height: 100px;
-  margin: 0 0 52px 0;
+  margin: 0 0 48px 0;
 }
 /* .................................. */
 
