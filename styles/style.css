@@ -309,7 +309,6 @@ label:last-child {
 
 /* COMMON STYLES */
 .features__subtitle {
-  font-family: "Roboto";
   font-size: 24px;
   line-height: 28px;
   color: #383838;
@@ -323,17 +322,15 @@ label:last-child {
 }
 .item__img {
   display: flex;
-  align-items: center;
   height: 100px;
   margin: 0 0 52px 0;
 }
 /* .................................. */
 
-.offer__container {
+.offer {
   padding: 106px 0 122px 0;
 }
 .offer__title {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
@@ -364,7 +361,6 @@ label:last-child {
 /* COMMON STYLES */
 
 .link__title {
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 20px;
   line-height: 1.15;
@@ -374,7 +370,6 @@ label:last-child {
   text-decoration: underline;
 }
 .item__link {
-  font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
@@ -390,11 +385,11 @@ label:last-child {
 /* ......................... */
 
 .footer {
+  padding: 120px 0;
   background: #10367c;
 }
 .footer__container {
   display: flex;
-  padding: 120px 0;
   flex-wrap: wrap;
 }
 
@@ -406,7 +401,6 @@ label:last-child {
   margin: 0 282px 0 0;
 }
 .footer__copyright {
-  font-family: "Roboto";
   line-height: 1.14;
   color: #fff;
   margin: 64px 0 0 0;
