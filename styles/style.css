@@ -136,18 +136,19 @@ body {
 .top-section__container {
   display: flex;
   flex-direction: column;
+  padding-top: 51px;
+  padding-bottom: 131px;
 }
 .top-section__header {
   display: flex;
+  justify-content: space-between;
   min-height: 46px;
-  margin: 51px 0 196px 0;
   z-index: 10;
 }
 /*..................................*/
 
 /* top section header */
 .header__logo {
-  margin: 0 684px 0 0;
 }
 .header__logo_icon {
   fill: #3077c6;
@@ -205,7 +206,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 131px 0;
+  margin: 196px 0 0 0;
 }
 .content__title {
   align-self: start;
@@ -215,6 +216,7 @@ body {
   font-size: 50px;
   line-height: 118%;
   color: #fff;
+  z-index: 50;
 }
 .content__form-subtitle {
   display: flex;
@@ -240,6 +242,7 @@ label:last-child {
   background: #fff;
   border-radius: 8px;
   z-index: 10;
+  max-width: 100%;
 }
 .content__form_city {
   padding: 0 24px;
@@ -258,7 +261,7 @@ label:last-child {
 }
 
 .content__form_date {
-  width: 259px;
+  width: 129px;
   height: 64px;
 }
 .content__form_date:hover {
@@ -305,13 +308,16 @@ label:last-child {
   height: 40px;
 }
 .content__download_appstore {
-
 }
 .content__download_appstore-icon {
   width: 120px;
   height: 40px;
 }
-
+@media (max-width-width: 767px) {
+  .footer__container li {
+    display: none;
+  }
+}
 
 /* ........................................... */
 
@@ -322,6 +328,7 @@ label:last-child {
   font-size: 24px;
   line-height: 28px;
   color: #383838;
+  text-align: center;
 }
 .features__item {
   width: 296px;
@@ -362,7 +369,6 @@ label:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   margin: 80px 0 0 0;
 }
 /* .............................. */
@@ -399,8 +405,10 @@ label:last-child {
   background: #10367c;
 }
 .footer__container {
+
+}
+.footer__content {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .footer__about {
@@ -415,4 +423,135 @@ label:last-child {
   color: #fff;
   margin: 64px 0 0 0;
 }
+.footer__logo {
+  display: none;
+}
 /* ............................. */
+@media (max-width: 1272px) {
+  ._container {
+    max-width: 970px;
+  }
+  .features__subtitle {
+    font-size: 22px;
+    line-height: 117%;
+  }
+}
+@media (max-width: 992px) {
+  ._container {
+    max-width: 750px;
+  }
+  .offer__features {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .footer__content {
+    justify-content: space-between;
+  }
+  .footer__about {
+    margin: 0;
+  }
+  .footer__property {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  ._container {
+    max-width: none;
+  }
+  .footer {
+    padding: 80px 0;
+  }
+  .footer__about {
+    margin: 0;
+  }
+  .footer__property {
+    margin: 0;
+  }
+  .list__item {
+    display: none;
+  }
+  .footer__content {
+    gap: 16px;
+    margin: 40px 0 0 0;
+    justify-content: space-around;
+  }
+  .link__title {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  .footer__copyright {
+    font-size: 12px;
+    line-height: 117%;
+    margin: 32px 0 0 0;
+    text-align: center;
+  }
+  .footer__logo {
+    text-align: center;
+    display: block;
+  }
+  .footer__logo_icon {
+    width: 150px;
+    height: 33px;
+    fill: #ffffff;
+  }
+}
+@media (max-width: 360px) {
+  .offer__title:after {
+    display: none;
+  }
+  .offer {
+    padding: 24px 0 40px 0;
+  }
+  .offer__title {
+    font-size: 28px;
+  }
+  .offer__features {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0 0 0;
+    row-gap: 32px;
+  }
+  .features__subtitle {
+    font-size: 15px;
+    line-height: 117%;
+  }
+  .item__img {
+    width: 52px;
+    height: 64px;
+    margin: 0 0 19px 0;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+  .footer__about {
+    margin: 0;
+  }
+  .footer__property {
+    margin: 0;
+  }
+  .list__item {
+    display: none;
+  }
+  .footer__content {
+    gap: 16px;
+    margin: 40px 0 0 0;
+  }
+  .link__title {
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  .footer__copyright {
+    font-size: 12px;
+    line-height: 117%;
+    margin: 32px 0 0 0;
+  }
+  .footer__logo {
+    text-align: center;
+    display: block;
+  }
+  .footer__logo_icon {
+    width: 98px;
+    height: 19px;
+    fill: #ffffff;
+  }
+}
