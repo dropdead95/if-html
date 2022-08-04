@@ -16,37 +16,46 @@
         <section class="top-section">
           <div class="top-section__container _container">
             <div class="top-section__header">
-              <a href="#" class="header__logo">
-                <svg class="header__logo_icon">
-                  <use
-                    href="images/top-section/icons/top-section-sprite.svg#header-logo"
-                  ></use>
-                </svg>
-              </a>
-              <nav class="header__menu">
-                <ul class="menu__list">
-                  <li class="menu__item">
-                    <a href="#" class="menu__link">Stays</a>
-                  </li>
-                  <li class="menu__item">
-                    <a href="#" class="menu__link">Attractions</a>
-                  </li>
-                </ul>
-              </nav>
-              <a href="#" class="header__night-button">
-                <svg class="header__night-button-icon">
-                  <use
-                    href="images/top-section/icons/top-section-sprite.svg#night-icon"
-                  ></use>
-                </svg>
-              </a>
-              <a href="#" class="header__account-button">
-                <svg class="header__account-button-icon">
-                  <use
-                    href="images/top-section/icons/top-section-sprite.svg#account-icon"
-                  ></use>
-                </svg>
-              </a>
+              <div class="top-section__header_right">
+                <a href="#" class="header__logo">
+                  <svg class="header__logo_icon">
+                    <use
+                      href="images/top-section/icons/top-section-sprite.svg#header-logo"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="top-section__header_left">
+                <nav class="header__menu">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Stays</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Attractions</a>
+                    </li>
+                  </ul>
+                </nav>
+                <a href="#" class="header__night-button">
+                  <svg class="header__night-button-icon">
+                    <use
+                      href="images/top-section/icons/top-section-sprite.svg#night-icon"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#" class="header__account-button">
+                  <svg class="header__account-button-icon">
+                    <use
+                      href="images/top-section/icons/top-section-sprite.svg#account-icon"
+                    ></use>
+                  </svg>
+                </a>
+                <div class="top-section__header_burger">
+                  <span class="burger-line__top burger-line"></span>
+                  <span class="burger-line__middle burger-line"></span>
+                  <span class="burger-line__bottom burger-line"></span>
+                </div>
+              </div>
             </div>
             <div class="top-section__content">
               <h1 class="content__title">
@@ -56,27 +65,67 @@
                 <label for="destination">
                   Your destination or hotel name
                 </label>
-                <label for="date">Check-in — Check-out</label>
+                <label for="date-check-in">Check-in</label>
+                <span class="blank">—</span>
+                <label for="date-check-out">Check-out</label>
               </div>
               <form action="#" class="content__form">
                 <input
                   id="destination"
                   name="destination"
                   type="text"
-                  class="content__form_city"
+                  class="content__form_city _input-hover"
                   value="New York"
                 />
-                <input
-                  id="date"
-                  name="date"
-                  type="date"
-                  class="content__form_date"
-                /><input
-                  name="guests"
-                  type="text"
-                  class="content__form_guests"
-                  value="2 Adults — 0 Children — 1 Room"
-                /><button type="submit" class="content__form_button">
+                <div class="check__wrapper">
+                  <input
+                    id="date-check-in"
+                    name="date-check-in"
+                    type="date"
+                    class="content__form_date-checkin _input-hover"
+                  />
+                  <input
+                    id="date-check-out"
+                    name="date-check-out"
+                    type="date"
+                    class="content__form_date-checkout _input-hover"
+                  />
+                </div>
+                <div class="guest__wrapper">
+                  <select
+                    name="adult"
+                    id="adult"
+                    class="content__form_adult _select-option"
+                  >
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adult</option>
+                    <option value="3">3 Adult</option>
+                    <option value="4">4 Adult</option>
+                    <option value="5">5 Adult</option>
+                  </select>
+                  <select
+                    name="children"
+                    id="children"
+                    class="content__form_children _select-option"
+                  >
+                    <option value="0">0 children</option>
+                    <option value="1">1 child</option>
+                    <option value="2">2 children</option>
+                    <option value="3">3 children</option>
+                    <option value="4">4 children</option>
+                    <option value="5">5 children</option>
+                  </select>
+                  <select
+                    name="room"
+                    id="room"
+                    class="content__form_room _select-option"
+                  >
+                    <option value="1">1 room</option>
+                    <option value="2">2 rooms</option>
+                    <option value="3">3 rooms</option>
+                  </select>
+                </div>
+                <button type="submit" class="content__form_button">
                   Search
                 </button>
               </form>
@@ -171,7 +220,7 @@
             </svg>
           </a>
           <div class="footer__content row">
-            <ul class="col-lg-4 col-sm-2  footer__about">
+            <ul class="col-lg-4 col-sm-2 footer__about">
               <a href="#" class="footer__about_link link__title">About</a>
               <li class="about__item list__item">
                 <a href="" class="about__item_link item__link"
@@ -188,7 +237,7 @@
                 <a href="" class="about__item_link item__link">Terms</a>
               </li>
             </ul>
-            <ul class="col-lg-4 col-sm-6   footer__property">
+            <ul class="col-lg-4 col-sm-6 footer__property">
               <a href="#" class="footer__property_link link__title"
                 >Property types</a
               >
@@ -215,7 +264,7 @@
                 <a href="" class="property__item_link item__link">Hostels</a>
               </li>
             </ul>
-            <ul class="col-lg-4 col-sm-2  footer__support">
+            <ul class="col-lg-4 col-sm-2 footer__support">
               <a href="#" class="footer__support_link link__title">Support</a>
               <li class="support__item list__item">
                 <a href="" class="support__item_link item__link"
