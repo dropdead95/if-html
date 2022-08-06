@@ -15,8 +15,8 @@
       <main class="main">
         <section class="top-section">
           <div class="top-section__container _container">
-            <div class="top-section__header">
-              <a href="#" class="header__logo">
+            <div class="top-section__header row ">
+              <a href="#" class="header__logo col-lg-9 col-md-9 col-sm-5 col-xs-5">
                 <svg class="header__logo_icon">
                   <use
                     href="images/top-section/icons/top-section-sprite.svg#header-logo"
@@ -24,12 +24,13 @@
                 </svg>
               </a>
               <nav class="header__menu">
+                <div class="menu__burger"></div>
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Stays</a>
+                    <a href="#" class="menu__link menu__link_stays">Stays</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Attractions</a>
+                    <a href="#" class="menu__link menu__link_attractions">Attractions</a>
                   </li>
                 </ul>
               </nav>
@@ -52,31 +53,63 @@
               <h1 class="content__title">
                 Discover stays to live, work or just relax
               </h1>
-              <div class="content__form-subtitle">
-                <label for="destination">
+              <div class="content__form-subtitle row">
+                <label class="content__form-subtitle-destination content__form-subtitle-item col-lg-5 col-md-5" for="destination">
                   Your destination or hotel name
                 </label>
-                <label for="date">Check-in — Check-out</label>
+                <label class="content__form-subtitle-checkin content__form-subtitle-item" for="check-in">Check-in&ndash;</label>
+                <label class="content__form-subtitle-checkout content__form-subtitle-item" for="check-out">Check-out</label>
               </div>
-              <form action="#" class="content__form">
+              <form action="#" class="content__form row">
+                <img class="search-icon" src="images/top-section/icons/search.svg" alt="">
                 <input
                   id="destination"
                   name="destination"
                   type="text"
-                  class="content__form_city"
-                  value="New York"
+                  class="content__form_destination col-lg-5 col-sm-6"
+                  placeholder="Your destination or hotel name"
                 />
-                <input
-                  id="date"
-                  name="date"
-                  type="date"
-                  class="content__form_date"
-                /><input
-                  name="guests"
-                  type="text"
-                  class="content__form_guests"
-                  value="2 Adults — 0 Children — 1 Room"
-                /><button type="submit" class="content__form_button">
+                <div class="check__wrapper col-lg-2 col-sm-6">
+                  <label for="check-in" class="check-in-text">Check-in</label>
+                  <label for="check-out" class="check-out-text">Check-out</label>
+                  <input
+                      id="check-in"
+                      name="check-in"
+                      type="date"
+                      class="content__form_check-in date-item"
+                  />
+                  <input
+                      id="check-out"
+                      name="check-out"
+                      type="date"
+                      class="content__form_check-out date-item"
+                  />
+                </div>
+                <div class="select__wrapper col-lg-3 col-sm-6 ">
+                  <select name="adults" id="adults" class="content__form_adults select-item">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                    <option value="5">5 Adults</option>
+                  </select>
+                  <select name="children" id="children" class="content__form_children select-item">
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                    <option value="3">3 Children</option>
+                    <option value="4">4 Children</option>
+                    <option value="5">5 Children</option>
+                  </select>
+                  <select name="room" id="room" class="content__form_room select-item">
+                    <option value="1">1 room</option>
+                    <option value="2">2 rooms</option>
+                    <option value="3">3 rooms</option>
+                    <option value="4">4 rooms</option>
+                    <option value="5">5 rooms</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="content__form_button col-lg-2 col-sm-6">
                   Search
                 </button>
               </form>
@@ -104,7 +137,7 @@
             <h1 class="offer__title">What do we offer</h1>
             <ul class="offer__features row">
               <li
-                class="col-lg-3 col-md-6 col-sm-4 features__support features__item"
+                class="col-lg-3 col-md-6 col-sm-3 col-xs-4 features__support features__item"
               >
                 <div class="support__img">
                   <svg class="item__img">
@@ -118,7 +151,7 @@
                 </h2>
               </li>
               <li
-                class="col-lg-3 col-md-6 col-sm-4 features__communication features__item"
+                class="col-lg-3 col-md-6 col-sm-3 col-xs-4 features__communication features__item"
               >
                 <div class="communication__img">
                   <svg class="item__img">
@@ -132,7 +165,7 @@
                 </h2>
               </li>
               <li
-                class="col-lg-3 col-md-6 col-sm-4 features__book features__item"
+                class="col-lg-3 col-md-6 col-sm-3 col-xs-4 features__book features__item"
               >
                 <div class="book__img">
                   <svg class="item__img">
@@ -144,7 +177,7 @@
                 <h2 class="book__subtitle features__subtitle">Book online</h2>
               </li>
               <li
-                class="col-lg-3 col-md-6 col-sm-4 features__reviews features__item"
+                class="col-lg-3 col-md-6 col-sm-3 col-xs-4 features__reviews features__item"
               >
                 <div class="reviews__img">
                   <svg class="item__img">
