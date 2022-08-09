@@ -591,6 +591,49 @@ select {
 .destinations__button-icon {
   transform: rotate(-270deg);
 }
+.image-section__first-image {
+  position: relative;
+}
+.image-section__second-image {
+  position: relative;
+}
+.image-section__third-image {
+  position: relative;
+}
+.image-section__fourth-image {
+  position: relative;
+}
+
+.image-section__overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 296px;
+  aspect-ratio: 1/1;
+  padding: 124px 84px;
+  background: rgba(56, 56, 56, 0.4);
+  opacity: 0;
+}
+
+.image-section__overlay-btn {
+  display: block;
+  width: 128px;
+  height: 48px;
+  background: var(--general-white);
+  font-size: 18px;
+  line-height: 117%;
+  color: var(--general-blue);
+  text-align: center;
+  padding: 13px 0;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+
+}
+.image-section__overlay:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
 
 /* FOOTER */
 
