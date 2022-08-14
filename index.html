@@ -8,6 +8,10 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -232,81 +236,62 @@
         </section>
         <section class="homes">
           <div class="homes__container _container">
-            <h1 class="homes__title _title-section">Homes guests loves</h1>
-            <div class="homes__slider _common-image-block row">
-              <div class="slider__button">
-                <span class="button__arrow">
-                  <img src="images/homes-section/icons/arrowbtn.svg" alt="" />
-                </span>
-              </div>
-              <div
-                class="slider__first-slide _item-block col-lg-3 col-md-3 col-sm-3 col-xs-3"
-              >
-                <div class="slider__first-slide_img">
-                  <img
-                    class="img-block-image"
-                    src="images/homes-section/leopold-hotel.jpg"
-                    alt=""
-                  />
+            <div class="homes__slider swiper">
+              <div class="homes__title _title-section">Homes guests loves</div>
+              <div class="homes__slider-wrapper swiper-wrapper">
+                <div class="homes__slide swiper-slide">
+                  <div class="homes__slide-image">
+                    <img
+                      class="homes__slide-image-item"
+                      src="images/homes-section/leopold-hotel.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="#" class="homes__slide-title">Hotel Leopold</a>
+                  <div class="homes__slide-subtitle">
+                    Saint Petersburg, Russia
+                  </div>
                 </div>
-                <div class="slider__first-slide_title _item-title">
-                  Hotel Leopold
+                <div class="homes__slide swiper-slide">
+                  <div class="homes__slide-image">
+                    <img
+                      class="homes__slide-image-item"
+                      src="images/homes-section/sunshine-apartment.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="#" class="homes__slide-title">Apartment Sunshine</a>
+                  <div class="homes__slide-subtitle">
+                    Santa Cruz de Tenerife, Spain
+                  </div>
                 </div>
-                <div class="slider__first-slide_subtitle slide-subtitle">
-                  Saint Petersburg, Russia
+                <div class="homes__slide swiper-slide">
+                  <div class="homes__slide-image">
+                    <img
+                      class="homes__slide-image-item"
+                      src="images/homes-section/villa-kunerad.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="#" class="homes__slide-title">Villa Kunerad</a>
+                  <div class="homes__slide-subtitle">
+                    Vysokie Tatry, Slowakia
+                  </div>
                 </div>
-              </div>
-              <div
-                class="slider__second-slide _item-block col-lg-3 col-md-3 col-sm-3 col-xs-3"
-              >
-                <div class="slider__second-slide_img">
-                  <img
-                    class="img-block-image"
-                    src="images/homes-section/sunshine-apartment.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="slider__second-slide_title _item-title">
-                  Apartment Sunshine
-                </div>
-                <div class="slider__second-slide_subtitle slide-subtitle">
-                  Santa Cruz de Tenerife, Spain
-                </div>
-              </div>
-              <div
-                class="slider__third-slide _item-block col-lg-3 col-md-3 col-sm-3 col-xs-3"
-              >
-                <div class="slider__third-slide_img">
-                  <img
-                    class="img-block-image"
-                    src="images/homes-section/villa-kunerad.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="slider__third-slide_title _item-title">
-                  Villa Kunerad
-                </div>
-                <div class="slider__third-slide_subtitle slide-subtitle">
-                  Vysokie Tatry, Slowakia
+                <div class="homes__slide swiper-slide">
+                  <div class="homes__slide-image">
+                    <img
+                      class="homes__slide-image-item"
+                      src="images/homes-section/hostel-friendship.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="#" class="homes__slide-title">Hostel Friendship</a>
+                  <div class="homes__slide-subtitle">Berlin, Germany</div>
                 </div>
               </div>
-              <div
-                class="slider__fourth-slide _item-block col-lg-3 col-md-3 col-sm-3 col-xs-3"
-              >
-                <div class="slider__fourth-slide_img">
-                  <img
-                    class="img-block-image"
-                    src="images/homes-section/hostel-friendship.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="slider__fourth-slide_title _item-title">
-                  Hostel Friendship
-                </div>
-                <div class="slider__fourth-slide_subtitle slide-subtitle">
-                  Berlin, Germany
-                </div>
-              </div>
+              <a href="#" class="homes__slider-btn swiper-button-next">
+              </a>
             </div>
           </div>
         </section>
@@ -316,81 +301,129 @@
               The best destinations
             </div>
             <div class="destinations__tabs">
-              <div class="destination__tabs_tabs-section">
-                <div class="tabs-section__regions tab">Regions</div>
-                <div class="tabs-section__cities tab">Cities</div>
-                <div class="tabs-section__places tab">Places of interest</div>
-                <div class="tabs-section__places tab tabs-section__places-mobile">Places</div>
-
+              <div class="destinations__tabs-item">Regions</div>
+              <div class="destinations__tabs-item">Cities</div>
+              <div
+                class="destinations__tabs-item destinations__tabs-item--desktop"
+              >
+                Places of interest
               </div>
               <div
-                class="destinations__tabs_image-section _common-image-block row"
+                class="destinations__tabs-item destinations__tabs-item--mobile"
               >
-                <div class="destinations__button">
-                  <img class="destinations__button-icon" src="images/destinations/arrowbtn.svg" alt="">
-                </div>
-                <div class="image-section__first-image _item-block dest-block col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                  <div class="image-section__overlay">
-                    <a href="#" class="image-section__overlay-btn">Book now</a>
-                  </div>
-                  <div class="image-section__first-image_img img-block">
+                Places
+              </div>
+            </div>
+            <div class="destinations__cards">
+              <div class="destinations__cards-item">
+                <div class="cards-item__content">
+                  <div class="cards-item__image">
                     <img
-                      class="img-block-image"
+                      class="cards-item__image-img"
                       src="images/destinations/regions/maldives.jpg"
                       alt=""
                     />
+                    <a href="#" class="cards-item__image-button">Book now</a>
                   </div>
-                  <div class="image-section__first-image_title _item-title">
-                    Maldives
-                  </div>
+                  <div class="cards-item__title">Maldives</div>
                 </div>
-                <div class="image-section__second-image _item-block dest-block col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                  <div class="image-section__overlay">
-                    <a href="#" class="image-section__overlay-btn">Book now</a>
-                  </div>
-                  <div class="image-section__second-image_img img-block">
+              </div>
+              <div class="destinations__cards-item">
+                <div class="cards-item__content">
+                  <div class="cards-item__image">
                     <img
-                      class="img-block-image"
+                      class="cards-item__image-img"
                       src="images/destinations/regions/spain.jpg"
                       alt=""
                     />
+                    <a href="#" class="cards-item__image-button">Book now</a>
                   </div>
-                  <div class="image-section__second-image_title _item-title">
-                    Spain
-                  </div>
+                  <div class="cards-item__title">Spain</div>
                 </div>
-                <div class="image-section__third-image _item-block dest-block col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                  <div class="image-section__overlay">
-                    <a href="#" class="image-section__overlay-btn">Book now</a>
-                  </div>
-                  <div class="image-section__third-image_img img-block">
+              </div>
+              <div class="destinations__cards-item">
+                <div class="cards-item__content">
+                  <div class="cards-item__image">
                     <img
-                      class="img-block-image"
+                      class="cards-item__image-img"
                       src="images/destinations/regions/norway.jpg"
                       alt=""
                     />
+                    <a href="#" class="cards-item__image-button">Book now</a>
                   </div>
-                  <div class="image-section__third-image_title _item-title">
-                    Norway
-                  </div>
+                  <div class="cards-item__title">Norway</div>
                 </div>
-                <div class="image-section__fourth-image _item-block dest-block col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                  <div class="image-section__overlay">
-                    <a href="#" class="image-section__overlay-btn">Book now</a>
-                  </div>
-                  <div class="image-section__fourth-image_img img-block">
+              </div>
+              <div class="destinations__cards-item">
+                <div class="cards-item__content">
+                  <div class="cards-item__image">
                     <img
-                      class="img-block-image"
+                      class="cards-item__image-img"
                       src="images/destinations/regions/island.jpg"
                       alt=""
                     />
+                    <a href="#" class="cards-item__image-button">Book now</a>
                   </div>
-                  <div class="image-section__fourth-image_title _item-title">
-                    Island
+                  <div class="cards-item__title">Island</div>
+                </div>
+              </div>
+              <a href="#" class="destinations__cards-btn">
+                <img
+                  class="destinations__cards-btn-icon"
+                  src="images/destinations/arrowbtn.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="advertisement">
+          <div class="advertisement__container _container">
+            <div class="advertisement__content">
+              <a href="#" class="advertisement__content-close">
+                <svg
+                  class="advertisement__content-close-icon"
+                  viewBox="0 0 26 26"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26 1.4857L24.5144 0L13 11.5143L1.4857 0L0 1.4857L11.5143 13L0 24.5144L1.4857 26L13 14.4857L24.5144 26L26 24.5144L14.4857 13L26 1.4857Z"
+                  />
+                </svg>
+              </a>
+              <div class="advertisement__content-main">
+                <div class="advertisement__content-main-logo">
+                  <img
+                    class="advertisement__content-main-logo-icon"
+                    src="images/advertisement/logo-adv-mobile.png"
+                    alt=""
+                  />
+                </div>
+                <div class="advertisement__content-main-image">
+                  <img
+                    class="advertisement__content-main-icon"
+                    src="images/advertisement/user.png"
+                    alt=""
+                  />
+                </div>
+                <div class="advertisement__content-main-text">
+                  <div class="advertisement__content-main-desc">
+                    Sign up and get 20% off your first booking
                   </div>
+                  <a href="#" class="advertisement__content-main-btn"
+                    >Sign up</a
+                  >
+                  <a href="" class="advertisement__content-main-btn-mobile"
+                    >Install</a
+                  >
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__container _container">
+            <div class="reviews__title _title-section">Guest reviews</div>
           </div>
         </section>
       </main>
@@ -466,5 +499,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
