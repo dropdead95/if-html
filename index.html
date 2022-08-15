@@ -8,6 +8,10 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -15,8 +19,11 @@
       <main class="main">
         <section class="top-section">
           <div class="top-section__container _container">
-            <div class="top-section__header row ">
-              <a href="#" class="header__logo col-lg-9 col-md-9 col-sm-5 col-xs-5">
+            <div class="top-section__header row">
+              <a
+                href="#"
+                class="header__logo col-lg-9 col-md-9 col-sm-5 col-xs-5"
+              >
                 <svg class="header__logo_icon">
                   <use
                     href="images/top-section/icons/top-section-sprite.svg#header-logo"
@@ -30,7 +37,9 @@
                     <a href="#" class="menu__link menu__link_stays">Stays</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_attractions">Attractions</a>
+                    <a href="#" class="menu__link menu__link_attractions"
+                      >Attractions</a
+                    >
                   </li>
                 </ul>
               </nav>
@@ -54,14 +63,29 @@
                 Discover stays to live, work or just relax
               </h1>
               <div class="content__form-subtitle row">
-                <label class="content__form-subtitle-destination content__form-subtitle-item col-lg-5 col-md-5" for="destination">
+                <label
+                  class="content__form-subtitle-destination content__form-subtitle-item col-lg-5 col-md-5"
+                  for="destination"
+                >
                   Your destination or hotel name
                 </label>
-                <label class="content__form-subtitle-checkin content__form-subtitle-item" for="check-in">Check-in&ndash;</label>
-                <label class="content__form-subtitle-checkout content__form-subtitle-item" for="check-out">Check-out</label>
+                <label
+                  class="content__form-subtitle-checkin content__form-subtitle-item"
+                  for="check-in"
+                  >Check-in&ndash;</label
+                >
+                <label
+                  class="content__form-subtitle-checkout content__form-subtitle-item"
+                  for="check-out"
+                  >Check-out</label
+                >
               </div>
               <form action="#" class="content__form row">
-                <img class="search-icon" src="images/top-section/icons/search.svg" alt="">
+                <img
+                  class="search-icon"
+                  src="images/top-section/icons/search.svg"
+                  alt=""
+                />
                 <input
                   id="destination"
                   name="destination"
@@ -71,36 +95,50 @@
                 />
                 <div class="check__wrapper col-lg-2 col-sm-6">
                   <label for="check-in" class="check-in-text">Check-in</label>
-                  <label for="check-out" class="check-out-text">Check-out</label>
+                  <label for="check-out" class="check-out-text"
+                    >Check-out</label
+                  >
                   <input
-                      id="check-in"
-                      name="check-in"
-                      type="date"
-                      class="content__form_check-in date-item"
+                    id="check-in"
+                    name="check-in"
+                    type="date"
+                    class="content__form_check-in date-item"
                   />
                   <input
-                      id="check-out"
-                      name="check-out"
-                      type="date"
-                      class="content__form_check-out date-item"
+                    id="check-out"
+                    name="check-out"
+                    type="date"
+                    class="content__form_check-out date-item"
                   />
                 </div>
-                <div class="select__wrapper col-lg-3 col-sm-6 ">
-                  <select name="adults" id="adults" class="content__form_adults select-item">
+                <div class="select__wrapper col-lg-3 col-sm-6">
+                  <select
+                    name="adults"
+                    id="adults"
+                    class="content__form_adults select-item"
+                  >
                     <option value="1">1 Adult</option>
                     <option value="2">2 Adults</option>
                     <option value="3">3 Adults</option>
                     <option value="4">4 Adults</option>
                     <option value="5">5 Adults</option>
                   </select>
-                  <select name="children" id="children" class="content__form_children select-item">
+                  <select
+                    name="children"
+                    id="children"
+                    class="content__form_children select-item"
+                  >
                     <option value="1">1 Child</option>
                     <option value="2">2 Children</option>
                     <option value="3">3 Children</option>
                     <option value="4">4 Children</option>
                     <option value="5">5 Children</option>
                   </select>
-                  <select name="room" id="room" class="content__form_room select-item">
+                  <select
+                    name="room"
+                    id="room"
+                    class="content__form_room select-item"
+                  >
                     <option value="1">1 room</option>
                     <option value="2">2 rooms</option>
                     <option value="3">3 rooms</option>
@@ -109,7 +147,10 @@
                   </select>
                 </div>
 
-                <button type="submit" class="content__form_button col-lg-2 col-sm-6">
+                <button
+                  type="submit"
+                  class="content__form_button col-lg-2 col-sm-6"
+                >
                   Search
                 </button>
               </form>
@@ -195,44 +236,194 @@
         </section>
         <section class="homes">
           <div class="homes__container _container">
-            <h1 class="homes__title _title-section">Homes guests loves</h1>
-            <div class="homes__slider _common-image-block row">
-              <div class="slider__button">
-                <span class="button__arrow">
-                  <img src="images/homes-section/icons/arrowbtn.svg" alt="">
-                </span>
-              </div>
-              <div class="slider__first-slide _item-block col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <div class="slider__first-slide_img">
-                  <img class="img-block-image" src="images/homes-section/leopold-hotel.jpg" alt="">
+            <div class="homes__slider swiper">
+              <div class="homes__title _title-section">Homes guests loves</div>
+              <div class="homes__slider-wrapper swiper-wrapper">
+                <div class="homes__slide swiper-slide">
+                  <div class="homes__slide-image">
+                    <img
+                      class="homes__slide-image-item"
+                      src="images/homes-section/leopold-hotel.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="#" class="homes__slide-title">Hotel Leopold</a>
+                  <div class="homes__slide-subtitle">
+                    Saint Petersburg, Russia
+                  </div>
                 </div>
-                <div class="slider__first-slide_title _item-title">Hotel Leopold</div>
-                <div class="slider__first-slide_subtitle slide-subtitle">Saint Petersburg, Russia</div>
-              </div>
-              <div class="slider__second-slide _item-block col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                <div class="slider__second-slide_img">
-                  <img class="img-block-image" src="images/homes-section/sunshine-apartment.jpg" alt="">
+                <div class="homes__slide swiper-slide">
+                  <div class="homes__slide-image">
+                    <img
+                      class="homes__slide-image-item"
+                      src="images/homes-section/sunshine-apartment.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="#" class="homes__slide-title">Apartment Sunshine</a>
+                  <div class="homes__slide-subtitle">
+                    Santa Cruz de Tenerife, Spain
+                  </div>
                 </div>
-                <div class="slider__second-slide_title _item-title">Apartment Sunshine</div>
-                <div class="slider__second-slide_subtitle slide-subtitle">Santa  Cruz de Tenerife, Spain</div>
-              </div>
-              <div class="slider__third-slide _item-block col-lg-3  col-md-3 col-sm-3 col-xs-3">
-                <div class="slider__third-slide_img">
-                  <img class="img-block-image" src="images/homes-section/villa-kunerad.jpg" alt="">
+                <div class="homes__slide swiper-slide">
+                  <div class="homes__slide-image">
+                    <img
+                      class="homes__slide-image-item"
+                      src="images/homes-section/villa-kunerad.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="#" class="homes__slide-title">Villa Kunerad</a>
+                  <div class="homes__slide-subtitle">
+                    Vysokie Tatry, Slowakia
+                  </div>
                 </div>
-                <div class="slider__third-slide_title _item-title">Villa Kunerad</div>
-                <div class="slider__third-slide_subtitle slide-subtitle">Vysokie Tatry, Slowakia</div>
-              </div>
-              <div class="slider__fourth-slide _item-block col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
-                <div class="slider__fourth-slide_img">
-                  <img class="img-block-image" src="images/homes-section/hostel-friendship.jpg" alt="">
+                <div class="homes__slide swiper-slide">
+                  <div class="homes__slide-image">
+                    <img
+                      class="homes__slide-image-item"
+                      src="images/homes-section/hostel-friendship.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <a href="#" class="homes__slide-title">Hostel Friendship</a>
+                  <div class="homes__slide-subtitle">Berlin, Germany</div>
                 </div>
-                <div class="slider__fourth-slide_title _item-title">Hostel Friendship</div>
-                <div class="slider__fourth-slide_subtitle slide-subtitle">Berlin, Germany</div>
               </div>
-
-
-
+              <a href="#" class="homes__slider-btn swiper-button-next">
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="destinations">
+          <div class="destinations__container _container">
+            <div class="destinations__title _title-section">
+              The best destinations
+            </div>
+            <div class="destinations__tabs">
+              <div class="destinations__tabs-item">Regions</div>
+              <div class="destinations__tabs-item">Cities</div>
+              <div
+                class="destinations__tabs-item destinations__tabs-item--desktop"
+              >
+                Places of interest
+              </div>
+              <div
+                class="destinations__tabs-item destinations__tabs-item--mobile"
+              >
+                Places
+              </div>
+            </div>
+            <div class="destinations__cards">
+              <div class="destinations__cards-item">
+                <div class="cards-item__content">
+                  <div class="cards-item__image">
+                    <img
+                      class="cards-item__image-img"
+                      src="images/destinations/regions/maldives.jpg"
+                      alt=""
+                    />
+                    <a href="#" class="cards-item__image-button">Book now</a>
+                  </div>
+                  <div class="cards-item__title">Maldives</div>
+                </div>
+              </div>
+              <div class="destinations__cards-item">
+                <div class="cards-item__content">
+                  <div class="cards-item__image">
+                    <img
+                      class="cards-item__image-img"
+                      src="images/destinations/regions/spain.jpg"
+                      alt=""
+                    />
+                    <a href="#" class="cards-item__image-button">Book now</a>
+                  </div>
+                  <div class="cards-item__title">Spain</div>
+                </div>
+              </div>
+              <div class="destinations__cards-item">
+                <div class="cards-item__content">
+                  <div class="cards-item__image">
+                    <img
+                      class="cards-item__image-img"
+                      src="images/destinations/regions/norway.jpg"
+                      alt=""
+                    />
+                    <a href="#" class="cards-item__image-button">Book now</a>
+                  </div>
+                  <div class="cards-item__title">Norway</div>
+                </div>
+              </div>
+              <div class="destinations__cards-item">
+                <div class="cards-item__content">
+                  <div class="cards-item__image">
+                    <img
+                      class="cards-item__image-img"
+                      src="images/destinations/regions/island.jpg"
+                      alt=""
+                    />
+                    <a href="#" class="cards-item__image-button">Book now</a>
+                  </div>
+                  <div class="cards-item__title">Island</div>
+                </div>
+              </div>
+              <a href="#" class="destinations__cards-btn">
+                <img
+                  class="destinations__cards-btn-icon"
+                  src="images/destinations/arrowbtn.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="advertisement">
+          <div class="advertisement__container _container">
+            <div class="advertisement__content">
+              <a href="#" class="advertisement__content-close">
+                <svg
+                  class="advertisement__content-close-icon"
+                  viewBox="0 0 26 26"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M26 1.4857L24.5144 0L13 11.5143L1.4857 0L0 1.4857L11.5143 13L0 24.5144L1.4857 26L13 14.4857L24.5144 26L26 24.5144L14.4857 13L26 1.4857Z"
+                  />
+                </svg>
+              </a>
+              <div class="advertisement__content-main">
+                <div class="advertisement__content-main-logo">
+                  <img
+                    class="advertisement__content-main-logo-icon"
+                    src="images/advertisement/logo-adv-mobile.png"
+                    alt=""
+                  />
+                </div>
+                <div class="advertisement__content-main-image">
+                  <img
+                    class="advertisement__content-main-icon"
+                    src="images/advertisement/user.png"
+                    alt=""
+                  />
+                </div>
+                <div class="advertisement__content-main-text">
+                  <div class="advertisement__content-main-desc">
+                    Sign up and get 20% off your first booking
+                  </div>
+                  <a href="#" class="advertisement__content-main-btn"
+                    >Sign up</a
+                  >
+                  <a href="" class="advertisement__content-main-btn-mobile"
+                    >Install</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="reviews__container _container">
+            <div class="reviews__title _title-section">Guest reviews</div>
           </div>
         </section>
       </main>
@@ -246,7 +437,7 @@
             </svg>
           </a>
           <div class="footer__content row">
-            <ul class="col-lg-4 col-sm-2  footer__about">
+            <ul class="col-lg-4 col-sm-2 footer__about">
               <a href="#" class="footer__about_link link__title">About</a>
               <li class="about__item list__item">
                 <a href="" class="about__item_link item__link"
@@ -263,7 +454,7 @@
                 <a href="" class="about__item_link item__link">Terms</a>
               </li>
             </ul>
-            <ul class="col-lg-4 col-sm-6   footer__property">
+            <ul class="col-lg-4 col-sm-6 footer__property">
               <a href="#" class="footer__property_link link__title"
                 >Property types</a
               >
@@ -290,7 +481,7 @@
                 <a href="" class="property__item_link item__link">Hostels</a>
               </li>
             </ul>
-            <ul class="col-lg-4 col-sm-2  footer__support">
+            <ul class="col-lg-4 col-sm-2 footer__support">
               <a href="#" class="footer__support_link link__title">Support</a>
               <li class="support__item list__item">
                 <a href="" class="support__item_link item__link"
@@ -308,5 +499,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
