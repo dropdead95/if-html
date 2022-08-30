@@ -36,6 +36,9 @@
   }
 
   &__slide-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
     padding: 24px 24px 0;
   }
 

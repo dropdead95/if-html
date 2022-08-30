@@ -43,16 +43,16 @@
     position: absolute;
     width: 40px;
     height: 40px;
+    top: 48%;
     left: calc(98% - 9px);
     border-radius: 50%;
     background-color: var(--general-white);
+    z-index: 10;
   }
 
   &__slider-btn-icon {
     width: 9px;
     height: 21px;
-    stroke: #383838;
-    stroke-width: 2;
     position: absolute;
     left: 50%;
     top: 50%;
